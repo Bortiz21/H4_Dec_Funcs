@@ -3,6 +3,8 @@
 # File Name:   H4_Dec_Funcs.py
 # Function:    This Program reads and writes to files
 import sys
+
+
 # Define Functions
 # Menu
 def menu():
@@ -38,6 +40,8 @@ def calc(x):
             print("Performing Division")
             result = (operand_1 / operand_2)
             print("Result: ", result)
+        elif x == 0:
+            print("Goodbye!")
         else:
             print("error")
     except:
@@ -84,8 +88,5 @@ except:
     sys.exit(1)
 operand_1 = int(get_operand())
 operand_2 = int(get_operand())
+menu_val(menu_choice)
 
-test_var_1 = 1
-test_var_2 = 999
-
-menu_val(int(menu_choice))
